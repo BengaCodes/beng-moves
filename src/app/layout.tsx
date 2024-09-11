@@ -1,4 +1,6 @@
 import '@/assets/styles/global.css'
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 
 type MainLayoutProps = {
   children: React.ReactNode
@@ -14,7 +16,9 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <html>
       <body>
+        <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
